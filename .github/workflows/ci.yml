@@ -24,7 +24,7 @@ jobs:
         with:
           path: |
             _neovim
-          key: ${{ runner.os }}-x64-${{ hashFiles('todays-date') }}
+          key: ${{ runner.os }}-x64-${{ matrix.url }}-${{ hashFiles('todays-date') }}
 
       - name: Prepare
         run: |
